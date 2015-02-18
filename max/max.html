@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    
+    <script src="appservices.js"></script>
+    <script src="app.js">
+       
+  /*  function personController($scope) {
+     $scope.firstName="John",
+     $scope.lastName="Doe"
+ }*/
+ 
+    
+    </script>
+</head>
+
+<body>
+
+<div ng-app="myapp" ng-controller="personController">
+ 
+<p>Input something in the input box:{{name}}</p>
+
+    <button ng-click="loadMe()">Load me</button>
+    
+    <ul>
+    <li ng-repeat="city in citys">
+        {{city.name}}
+        
+        </li>
+    
+    </ul>
+</div>
+
+</body>
+</html>
