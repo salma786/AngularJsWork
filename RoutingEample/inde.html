@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Heelo i am with routing</title>    
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+    
+    <script>
+    var module=angular.module('sample',['ngRoute']);
+        
+        module.config('$routeProvider',function($routeProvider)
+                      {
+            
+            $routeProvider.when('/apple',{templateUrl:'templates\apple.html',controller:'RouteController'})
+            .when('/jack',{templateUrl:'templates\jack.html',controller:'RouteController'});
+
+        
+        });
+        
+        module.controller('RouteController',function($scope){});
+    
+    </script>
+</head>
+    <body ng-app="sample">
+    <a href="#/apple">Route 1</a><br/>
+        <div ng-view></div>
+    
+    </body>
+    
+</html>
