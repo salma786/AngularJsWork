@@ -1,11 +1,11 @@
 function checkTimeLiesBetween(startTime, endTime, givenTime) {
-    if (moment(givenTime, "hh:mm a").isAfter(startTime, "hh:mm a") && moment(givenTime, "hh:mm a").isBefore(endTime, "hh:mm a")) {
-        console.log(true);
-        //return true;
-    } else {
-        //return false;
-        console.log(false);
-    }
+    // if (moment(givenTime, "hh:mm a").isAfter(startTime, "hh:mm a") && moment(givenTime, "hh:mm a").isBefore(endTime, "hh:mm a")) {
+    //     console.log(true);
+    //     //return true;
+    // } else {
+    //     //return false;
+    //     console.log(false);
+    // }
     givenTime = "2010-10-20 " + changeTimeTo24(givenTime);
     startTime = "2010-10-20 " + changeTimeTo24(startTime);
     endTime = "2010-10-20 " + changeTimeTo24(endTime);
